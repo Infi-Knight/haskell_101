@@ -1,4 +1,5 @@
--- list comprehension combines map and filter
+-- list comprehension combines map, filter and then dissolves
+-- extra parens using concat
 -- it's syntax is almost similar to set comprehension in maths
 divisors_n :: Int -> [Int]
 divisors_n n = [x | x <- [1..n], (mod n x) == 0]
